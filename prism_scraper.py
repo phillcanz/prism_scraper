@@ -91,6 +91,7 @@ class PrismScraper:
                 next_btn = driver.find_element('xpath', '//*[@class="fa fa-angle-right"]')
                 next_btn.click()
                 time.sleep(2)
+                wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@id="walking-pruman"]')))
                 wait.until(EC.visibility_of_element_located((By.XPATH, xpath_grid)))
             except ElementClickInterceptedException:
                 break
