@@ -82,6 +82,7 @@ class PrismScraper:
                 policy_dict.update({elem:elem_info})
                 # print(policy_dict)
                 print(elem_info)
+                time.sleep(2)
                 all_policy = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, 'ALL')))
                 all_policy.click()
                 time.sleep(2)
@@ -132,8 +133,14 @@ class PrismScraper:
 
         wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'COMPONENT DESCRIPTION')]")))
 
-        xpath_grid = '//*[contains(@id,"-record-")]/tbody/tr/td[1]/div'
-        component_description_col = [elem.text for elem in driver.find_elements('xpath', xpath_grid)]
+        xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]'
+        wait.until(EC.visibility_of_element_located((By.XPATH, xpath_grid)))
+        xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr'
+        rows = driver.find_elements('xpath', xpath_grid)
+        for row in rows:
+            cols = row.find_elements('xpath', './/td')
+            for col in cols:
+                print(col.text)
         # xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[2]'
         # sum_assured_col = [elem.text for elem in driver.find_elements('xpath', xpath_grid)]
         # xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[3]'
@@ -141,7 +148,6 @@ class PrismScraper:
         # xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[4]'
         # premium_status_col = [elem.text for elem in driver.find_elements('xpath', xpath_grid)]
 
-        print(component_description_col)
         # elems = wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@tagName="TABLE"]')))
         # elems = [elem.text for elem in elems]
         # print(elems)
