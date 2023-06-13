@@ -97,14 +97,18 @@ class PrismScraper:
                         clickable_elem.click()
                         time.sleep(2)
                         elem_info =self.scrape_info(driver)
+                        policy_dict.update({elem:elem_info})
+                        print(json.dumps({elem:elem_info}, indent=4))
+                        all_policy_btn = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, 'ALL')))
+                        driver.execute_script("arguments[0].click();", all_policy_btn)
+                        # all_policy = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, 'ALL')))
+                        # all_policy.click()
+                        time.sleep(2)
                         break
-                    except:
+                    except Exception as e:
+                        # raise Exception(e)
                         self.handle_error_mining(driver, elem)
-                policy_dict.update({elem:elem_info})
-                print(json.dumps({elem:elem_info}, indent=4))
-                all_policy = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, 'ALL')))
-                all_policy.click()
-                time.sleep(2)
+
 
             wait.until(EC.visibility_of_element_located((By.XPATH, xpath_grid)))
 
