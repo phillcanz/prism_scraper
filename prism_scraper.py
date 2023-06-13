@@ -8,18 +8,19 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import ElementClickInterceptedException
 import time
-import pprint
-from bs4 import BeautifulSoup
 import json
 
 
 class PrismScraper:
     def __init__(self):
         options = Options()
-        options.add_experimental_option("detach", True)
         # options.add_argument("--headless")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--allow-insecure-localhost")
+        options.add_argument("--window-size=1280,800")
         self.driver = webdriver.Chrome(options=options)
-        self.driver.maximize_window()
+        # self.driver.maximize_window()
     
     def policyinfo_flow(self):
         driver = self.driver
@@ -27,6 +28,22 @@ class PrismScraper:
         self.nav_login(driver)
         self.nav_policyinfo(driver)
         self.start_mine(driver)
+
+    def handle_error_mining(self, driver, cond_str=''):
+        driver.get("https://prism.prulifeuk.com.ph/")
+        wait = WebDriverWait(driver, 10)
+        self.nav_login(driver)
+        self.nav_policyinfo(driver)
+        while True:
+            try:
+                elem = driver.find_elements('xpath', f'//a[text()={cond_str}]')
+                if len(elem) > 0:
+
+                    break
+                else:
+                    self.next_page_entry(driver)
+            except:
+                self.handle_error_mining(driver, cond_str)
 
     def nav_login(self, driver):
         wait = WebDriverWait(driver, 20)
@@ -46,7 +63,7 @@ class PrismScraper:
         
     def nav_policyinfo(self, driver):
         # wait if multiple user message prompts
-        wait = WebDriverWait(driver, 20)
+        wait = WebDriverWait(driver, 10)
 
         try:
             wait.until(EC.visibility_of_element_located((By.XPATH, '//div/h1[text()="Policies issued"]')))
@@ -62,7 +79,8 @@ class PrismScraper:
         policyinfo_btn = wait.until(EC.visibility_of_element_located((By.XPATH, '//span[text()="Policy information"]')))
         ActionChains(driver).move_to_element(policyinfo_btn).click(policyinfo_btn).perform()
         time.sleep(2)
-        wait.until(EC.visibility_of_element_located((By.XPATH, '//label[text()="ALL"]'))).click()
+        all_policy_btn = wait.until(EC.element_to_be_clickable((By.XPATH, '//label[text()="ALL"]')))
+        driver.execute_script("arguments[0].click();", all_policy_btn)
         wait.until(EC.visibility_of_element_located((By.XPATH, '//*[contains(@id,"-record-") and contains(@id, "gridview-")]')))
 
     def start_mine(self, driver):
@@ -72,14 +90,17 @@ class PrismScraper:
         while True:
             elems = [elem.text for elem in driver.find_elements('xpath', xpath_grid)]
             for elem in elems:
-                print(f'Navigating: {elem}')
-                # xpath_clickable = f'//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]/div/a[contains(text(), {elem})]'
-                clickable_elem = wait.until(EC.visibility_of_element_located((By.LINK_TEXT, elem)))
-                clickable_elem.click()
-                time.sleep(2)
-                elem_info =self.scrape_info(driver)
+                print(f'Getting data for: {elem}')
+                while True:
+                    try:
+                        clickable_elem = wait.until(EC.visibility_of_element_located((By.LINK_TEXT, elem)))
+                        clickable_elem.click()
+                        time.sleep(2)
+                        elem_info =self.scrape_info(driver)
+                        break
+                    except:
+                        self.handle_error_mining(driver, elem)
                 policy_dict.update({elem:elem_info})
-                # print(policy_dict)
                 print(json.dumps({elem:elem_info}, indent=4))
                 all_policy = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, 'ALL')))
                 all_policy.click()
@@ -88,19 +109,27 @@ class PrismScraper:
             wait.until(EC.visibility_of_element_located((By.XPATH, xpath_grid)))
 
             try:
-                next_btn = driver.find_element('xpath', '//*[@class="fa fa-angle-right"]')
-                next_btn.click()
-                time.sleep(2)
-                wait.until(EC.invisibility_of_element_located((By.XPATH, '//*[@id="walking-pruman"]')))
-                wait.until(EC.visibility_of_element_located((By.XPATH, xpath_grid)))
+                self.next_page_entry(driver)
             except ElementClickInterceptedException:
                 break
-
+        
+        with open("policy_data.json", "w") as outfile:
+            json.dump(policy_dict, outfile)
+        
         self.driver.close()
+    
+    def next_page_entry(self, driver):
+        wait = WebDriverWait(driver, 10)
+        wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="fa fa-angle-right"]'))).click()
+        time.sleep(2)
+        wait.until(EC.visibility_of_element_located((By.XPATH, "//label[contains(text(), 'Showing ') and contains(text(), 'entries')]")))
+        xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]/div/a'
+        wait.until(EC.visibility_of_element_located((By.XPATH, xpath_grid)))
 
     def scrape_info(self, driver):
         wait = WebDriverWait(driver, 10)
 
+        ### GENERAL_INFORMATION ###
         wait.until(EC.visibility_of_element_located((By.XPATH, '//input[@name="agent_name"]')))
 
         while True:
@@ -130,13 +159,14 @@ class PrismScraper:
                         'ASSIGNED_STATUS':assigned_status, 'EFFECTIVITY_DATE':effectivity_date, 'FIRST_ISSUE_DATE':first_issue_date,
                         'MAILING_ADDRESS':mailing_address, 'RESIDENCE_ADDRESS':residence_address}
         
+        ### PAYMENT_INFORMATION ###
         wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'Payment Information')]"))).click()
         time.sleep(2)
 
         wait.until(EC.visibility_of_element_located((By.XPATH, '//input[@name="payment_method"]')))
 
         while True:
-            payment_method = wait.until(EC.visibility_of_element_located((By.XPATH, '//input[@name="payment_method"]'))).get_attribute('value')
+            payment_method = wait.until(EC.visibility_of_element_located((By.XPATH, '//input[@name="payment_method"]'))).get_attribute('value').strip()
             if len(payment_method.strip()) > 0:
                 break
         due_date = driver.find_element('xpath', '//input[@name="paid_to_date"]').get_attribute('value')
@@ -147,38 +177,91 @@ class PrismScraper:
                                'DUE_DATE':due_date, 'BILLING_FREQUENCY':billing_frequency,
                                'MODAL_PREMIUM':modal_premium, 'SINGLE_PREMIUM':single_premium}
         
+        ### PLAN_DETAILS ###
         wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'Plan Details')]"))).click()
         time.sleep(2)
 
         wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'COMPONENT DESCRIPTION')]")))
 
-        xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]'
-        wait.until(EC.visibility_of_element_located((By.XPATH, xpath_grid)))
+        first_row_col = ''
+        xpath_row_col = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]'
+        while True:
+            first_row_col = wait.until(EC.visibility_of_element_located((By.XPATH, xpath_row_col))).text.strip()
+            if len(first_row_col) > 0:
+                break
         xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr'
         rows = driver.find_elements('xpath', xpath_grid)
         plan_details = {}
+        row_num = 0
         for row in rows:
+            row_num = row_num + 1
             cols = row.find_elements('xpath', './/td')
-            component_description = cols[0].text.strip().replace(' ', '_')
-            component_details = {'SUM_ASSURED':f'{" ".join([word.strip() for word in cols[1].text.split()])}',
+            component_details = {'COMPONENT_DESCRIPTION':f'{" ".join([word.strip() for word in cols[0].text.split()])}',
+                                 'SUM_ASSURED':f'{" ".join([word.strip() for word in cols[1].text.split()])}',
                                  'CONTRACT_STATUS':f'{" ".join([word.strip() for word in cols[2].text.split()])}',
                                  'PREMIUM_STATUS':f'{" ".join([word.strip() for word in cols[3].text.split()])}'}
-            plan_details.update({component_description:component_details})
-        # xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[2]'
-        # sum_assured_col = [elem.text for elem in driver.find_elements('xpath', xpath_grid)]
-        # xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[3]'
-        # contract_status_col = [elem.text for elem in driver.find_elements('xpath', xpath_grid)]
-        # xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[4]'
-        # premium_status_col = [elem.text for elem in driver.find_elements('xpath', xpath_grid)]
+            plan_details.update({row_num:component_details})
+        
+        ### FUND_DETAILS ###
+        wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'Fund Details')]"))).click()
+        time.sleep(2)
 
-        # elems = wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@tagName="TABLE"]')))
-        # elems = [elem.text for elem in elems]
-        # print(elems)
+        wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'FUND TYPE')]")))
+
+        first_row_col = ''
+        xpath_row_col = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]'
+        while True:
+            first_row_col = wait.until(EC.visibility_of_element_located((By.XPATH, xpath_row_col))).text.strip()
+            if len(first_row_col) > 0:
+                break
+        xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr'
+        rows = driver.find_elements('xpath', xpath_grid)
+        fund_details = {}
+        row_num = 0
+        for row in rows:
+            row_num = row_num + 1
+            cols = row.find_elements('xpath', './/td')
+            fund_type_details = {'FUND_TYPE':f'{" ".join([word.strip() for word in cols[0].text.split()])}',
+                                 'UNIT_BALANCE':f'{" ".join([word.strip() for word in cols[1].text.split()])}',
+                                 'UNIT_PRICE':f'{" ".join([word.strip() for word in cols[2].text.split()])}',
+                                 'PRICE_DATE':f'{" ".join([word.strip() for word in cols[3].text.split()])}',
+                                 'FUND_VALUE':f'{" ".join([word.strip() for word in cols[4].text.split()])}'
+                                 }
+            fund_details.update({row_num:fund_type_details})
+        
+        ### BENEFICIARY_DETAILS ###
+        wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'Beneficiary Details')]"))).click()
+        time.sleep(2)
+
+        wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'NAME')]")))
+
+        first_row_col = ''
+        xpath_row_col = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]'
+        while True:
+            first_row_col = wait.until(EC.visibility_of_element_located((By.XPATH, xpath_row_col))).text.strip()
+            if len(first_row_col) > 0:
+                break
+        xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr'
+        rows = driver.find_elements('xpath', xpath_grid)
+        beneficiary_details = {}
+        row_num = 0
+        for row in rows:
+            row_num = row_num + 1
+            cols = row.find_elements('xpath', './/td')
+            beneficiary_name_details = {'NAME':f'{" ".join([word.strip() for word in cols[0].text.split()])}',
+                                 'RELATIONSHIP':f'{" ".join([word.strip() for word in cols[1].text.split()])}',
+                                 'BIRTHDATE':f'{" ".join([word.strip() for word in cols[2].text.split()])}',
+                                 'PERCENTAGE':f'{" ".join([word.strip() for word in cols[3].text.split()])}',
+                                 'DESIGNATION':f'{" ".join([word.strip() for word in cols[4].text.split()])}'
+                                 }
+            beneficiary_details.update({row_num:beneficiary_name_details})
 
         inner_dict = {'GENERAL_INFORMATION':general_information,
                       'PAYMENT_INFORMATION':payment_information,
-                      'PLAN_DETAILS':plan_details}
-
+                      'PLAN_DETAILS':plan_details,
+                      'FUND_DETAILS':fund_details,
+                      'BENEFICIARY_DETAILS':beneficiary_details
+                      }
 
         # print(json.dumps(inner_dict))
 
