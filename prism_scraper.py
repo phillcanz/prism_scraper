@@ -35,10 +35,10 @@ class PrismScraper:
         self.nav_login(driver)
         self.nav_policyinfo(driver)
         while True:
+            elem = []
             try:
                 elem = driver.find_elements('xpath', f'//a[text()={cond_str}]')
                 if len(elem) > 0:
-
                     break
                 else:
                     self.next_page_entry(driver)
@@ -121,7 +121,7 @@ class PrismScraper:
                         break
                     except Exception as e:
                         self.handle_error_mining(driver, elem)
-
+                        continue
             wait.until(EC.visibility_of_element_located(
                 (By.XPATH, xpath_grid)))
 
@@ -152,11 +152,20 @@ class PrismScraper:
         wait.until(EC.visibility_of_element_located(
             (By.XPATH, '//input[@name="agent_name"]')))
 
+        tries = 0
         while True:
+            tries = tries + 1
             agent_name = wait.until(EC.visibility_of_element_located(
                 (By.XPATH, '//input[@name="agent_name"]'))).get_attribute('value')
             if len(agent_name.strip()) > 0:
                 break
+            else:
+                time.sleep(1)
+
+            if tries > 20:
+                raise Exception("Timed Out")
+            else:
+                pass
         policy_number = driver.find_element(
             'xpath', '//*[@aria-labelledby="policyNumber-labelEl"]').get_attribute('innerText')
         branch_name = driver.find_element(
@@ -204,11 +213,20 @@ class PrismScraper:
         wait.until(EC.visibility_of_element_located(
             (By.XPATH, '//input[@name="payment_method"]')))
 
+        tries = 0
         while True:
+            tries = tries + 1
             payment_method = wait.until(EC.visibility_of_element_located(
                 (By.XPATH, '//input[@name="payment_method"]'))).get_attribute('value').strip()
             if len(payment_method.strip()) > 0:
                 break
+            else:
+                time.sleep(1)
+
+            if tries > 20:
+                raise Exception("Timed Out")
+            else:
+                pass
         due_date = driver.find_element(
             'xpath', '//input[@name="paid_to_date"]').get_attribute('value')
         billing_frequency = driver.find_element(

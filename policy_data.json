@@ -1,0 +1,1774 @@
+{
+    "04550865": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "04550865",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "EVARDO, NOVAH BEE E.",
+            "INSURED_NAME": "EVARDO, NOVAH BEE E.",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "27-Aug-2013",
+            "FIRST_ISSUE_DATE": "30-Aug-2013",
+            "MAILING_ADDRESS": "PUROK 3 BALICO DRIVE P. BOISER  ST. POBLACION TALIBON, BOHOL PHILIPPINES",
+            "RESIDENCE_ADDRESS": "PUROK 3 BALICO DRIVE P. BOISER  ST. POBLACION TALIBON, BOHOL PHILIPPINES"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Debit",
+            "DUE_DATE": "27-JUN-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "1,916.67",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "WAIVER OF PREMIUM ON TPD",
+                "SUM_ASSURED": "1,916.67",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "950,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK PROACTIVE FUND",
+                "UNIT_BALANCE": "43,806.98",
+                "UNIT_PRICE": "2.08745",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "91,444.88"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "EVARDO, REBECA E.",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1965-04-08",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "EVARDO, EZEKIELYN ANN E.",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "1995-12-02",
+                "PERCENTAGE": "0.00%",
+                "DESIGNATION": "S-RE"
+            },
+            "3": {
+                "NAME": "EVARDO, ZANONE C.",
+                "RELATIONSHIP": "FATHER",
+                "BIRTHDATE": "1966-09-28",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "10588129": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "10588129",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "LAGUARTE, APRILLAN BORNEO",
+            "INSURED_NAME": "LAGUARTE, APRILLAN BORNEO",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "2,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "11-Jun-2019",
+            "FIRST_ISSUE_DATE": "11-Jun-2019",
+            "MAILING_ADDRESS": "#40 ROAD 7  BRGY. BAGONG PAG-ASA QUEZON CITY",
+            "RESIDENCE_ADDRESS": "PUROK 5, SAN JOSE, TALIBON, BO HOL   TALIBON, BOHOL"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Debit",
+            "DUE_DATE": "11-JUN-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "3,300.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "INTENSIVE CARE UNIT BENEFIT",
+                "SUM_ASSURED": "3,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "1,500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "WAIVER OF PREMIUM ON TPD",
+                "SUM_ASSURED": "3,300.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "700,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,500.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "6": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "7": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "800,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK BOND FUND",
+                "UNIT_BALANCE": "4,490.31",
+                "UNIT_PRICE": "2.88464",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "12,952.92"
+            },
+            "2": {
+                "FUND_TYPE": "PRULINK GROWTH FUND",
+                "UNIT_BALANCE": "8,368.93",
+                "UNIT_PRICE": "3.54232",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "29,645.41"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "LAGUARTE, MA. DONAH AUGUIS",
+                "RELATIONSHIP": "WIFE",
+                "BIRTHDATE": "1991-12-15",
+                "PERCENTAGE": "30.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "LAGUARTE, LANCE DANIEL AUGUIS",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2018-07-24",
+                "PERCENTAGE": "35.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "LAGUARTE, LIAM DOMINIC AUGUIS",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2022-09-03",
+                "PERCENTAGE": "35.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "10940835": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "10940835",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "CABASAN, RENAN CAJES",
+            "INSURED_NAME": "CABASAN, RENAN CAJES",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "2,500,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "15-Aug-2019",
+            "FIRST_ISSUE_DATE": "15-Aug-2019",
+            "MAILING_ADDRESS": "GUINDACPAN  TALIBON BOHOL",
+            "RESIDENCE_ADDRESS": "GUINDACPAN  TALIBON BOHOL"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Debit",
+            "DUE_DATE": "15-JUN-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "5,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "60,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "60,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "32,577.65",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "63,674.00"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "CABASAN, ROSELA",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "1988-12-29",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "CABSAN, LIZA CAJES",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1968-12-02",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "12874085": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "12874085",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "INSURED_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,800,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "25-Aug-2020",
+            "FIRST_ISSUE_DATE": "25-Aug-2020",
+            "MAILING_ADDRESS": "ZAMORA  TALIBON BOHOL",
+            "RESIDENCE_ADDRESS": "ZAMORA, TALIBON, BOHOL    TALIBON BOHOL"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Credit Card",
+            "DUE_DATE": "25-AUG-2023",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "6,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,800,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "800,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "300,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "4,207.65",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "8,223.97"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "EVARDO, LJ MAE RAMOS",
+                "RELATIONSHIP": "NIECE/NEPHEW",
+                "BIRTHDATE": "2002-02-22",
+                "PERCENTAGE": "15.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "EVARDO, EUGENIO AURIT",
+                "RELATIONSHIP": "FATHER",
+                "BIRTHDATE": "1956-12-12",
+                "PERCENTAGE": "35.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "EVARDO, ZENAIDA RAMOS",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1960-10-24",
+                "PERCENTAGE": "35.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "4": {
+                "NAME": "EVARDO, LJ AN RAMOS",
+                "RELATIONSHIP": "NIECE/NEPHEW",
+                "BIRTHDATE": "2004-08-13",
+                "PERCENTAGE": "15.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "12946192": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "12946192",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "BORJA, JAYDEE AURESTILA",
+            "INSURED_NAME": "BORJA, JAYDEE AURESTILA",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "2,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "19-Sep-2020",
+            "FIRST_ISSUE_DATE": "19-Sep-2020",
+            "MAILING_ADDRESS": "PAGSA ZAMORA TALIBON BOHOL",
+            "RESIDENCE_ADDRESS": "PAGSA BRGY ZAMORA TALIBON BOHO"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "19-JUN-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "2,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "700,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "300,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "800,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "2,534.10",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "4,952.98"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "BORJA, JOVENIANO RAMOS",
+                "RELATIONSHIP": "FATHER",
+                "BIRTHDATE": "1996-05-05",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "BORJA, CIRIACA AURESTILA",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1959-02-22",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "12977105": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "12977105",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "MONSANTO, SHIELA CAJES",
+            "INSURED_NAME": "MONSANTO, SHIELA CAJES",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,200,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "13-Sep-2020",
+            "FIRST_ISSUE_DATE": "14-Sep-2020",
+            "MAILING_ADDRESS": "STO NINO  TALIBON BOHOL",
+            "RESIDENCE_ADDRESS": "STO NINO  TALIBON BOHOL"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "13-JUN-2023",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "9,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,200,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "1,905.54",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "3,724.44"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "MONSANTO, JAMES CYRUS CAJES",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2015-08-22",
+                "PERCENTAGE": "34.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "MONSANTO, PRECIOUS CEILO CAJES",
+                "RELATIONSHIP": "DAUGHTER",
+                "BIRTHDATE": "2009-09-04",
+                "PERCENTAGE": "33.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "MONSANTO, JOCIL CAJES",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2004-12-11",
+                "PERCENTAGE": "33.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "12997405": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "12997405",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "EVARDO, JESUS GARCIA",
+            "INSURED_NAME": "EVARDO, JESUS GARCIA",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,200,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "17-Sep-2020",
+            "FIRST_ISSUE_DATE": "17-Sep-2020",
+            "MAILING_ADDRESS": "PAGLAUM VILLAGE DON CARLOS  BUKIDNON",
+            "RESIDENCE_ADDRESS": "PAGLAUM VILLAGE DON CARLOS  BUKIDNON"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "17-SEP-2023",
+            "BILLING_FREQUENCY": "ANNUAL",
+            "MODAL_PREMIUM": "36,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,200,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "5,066.87",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "9,903.35"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "EVARDO, ELIJAH DANIEL NIETES",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2017-11-04",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "EVARDO, EIGY DUANE",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2005-11-08",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "EVARDO, NOREEN NIETES",
+                "RELATIONSHIP": "WIFE",
+                "BIRTHDATE": "1981-08-12",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "13390632": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "13390632",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "LOPEZ, LEACH MARIE LAYAN",
+            "INSURED_NAME": "LOPEZ, LEACH MARIE LAYAN",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,400,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "10-Nov-2020",
+            "FIRST_ISSUE_DATE": "10-Nov-2020",
+            "MAILING_ADDRESS": "BLK 14 LOT 17 618 BOUGAINVILLA VILLAGE AGUS RD., MARIGONDON LAPU LAPU CITY CEBU",
+            "RESIDENCE_ADDRESS": "BLK 14 LOT 17 618 BOUGAINVILLA VILLAGE AGUS RD., MARIGONDON LAPU LAPU CITY CEBU"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "10-AUG-2023",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "9,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,400,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "4,867.12",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "9,512.93"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "LOPEZ, LUCILLE LAYAN",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "1975-06-08",
+                "PERCENTAGE": "20.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "LOPEZ, MARCO LAWRENCE GABRI",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2014-03-25",
+                "PERCENTAGE": "80.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "14416303": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "14416303",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "NOCELLAS, NIEL PLENOS",
+            "INSURED_NAME": "NOCELLAS, NIEL PLENOS",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "2,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "30-Mar-2021",
+            "FIRST_ISSUE_DATE": "30-Mar-2021",
+            "MAILING_ADDRESS": "BLK 11 LOT 20 HANIYYAH HOMES BABAG 1 LAPU-LAPU CITY CEBU",
+            "RESIDENCE_ADDRESS": "BLK 11 LOT 20 HANIYYAH HOMES BABAG 1 LAPU-LAPU CITY CEBU"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "30-JUN-2023",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "7,751.50",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "1,473.05",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "2,879.12"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "NOCELLAS, MERY GALANO",
+                "RELATIONSHIP": "WIFE",
+                "BIRTHDATE": "1988-03-06",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "NOCELLAS, JOHN KLERK GALANO",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2014-06-07",
+                "PERCENTAGE": "10.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "NOCELLAS, SOFIA GALANO",
+                "RELATIONSHIP": "DAUGHTER",
+                "BIRTHDATE": "2018-09-11",
+                "PERCENTAGE": "10.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "4": {
+                "NAME": "NOCELLAS, LILA PLENOS",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1963-11-24",
+                "PERCENTAGE": "20.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "5": {
+                "NAME": "NOCELLAS, CHRIS DAVE GALANO",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2015-06-12",
+                "PERCENTAGE": "10.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "14612729": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "14612729",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "ILAGAN, MA. KRISTINE RUGAY",
+            "INSURED_NAME": "ILAGAN, MA. KRISTINE RUGAY",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "29-Apr-2021",
+            "FIRST_ISSUE_DATE": "29-Apr-2021",
+            "MAILING_ADDRESS": "SAN NICOLAS SECTOR PUNTOD  CAGAYAN DE ORO CITY",
+            "RESIDENCE_ADDRESS": "SAN NICOLAS SECTOR PUNTOD  CAGAYAN DE ORO CITY"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "29-JUN-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "2,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "800,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "1,935.24",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "3,782.49"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "ILAGAN, BAYANI CAAYAMAN",
+                "RELATIONSHIP": "FATHER",
+                "BIRTHDATE": "1955-10-16",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "ILAGAN, EDELISA RUGAY",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1966-08-09",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "14722479": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "14722479",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "TIRO, FEBIE FIL CANAVERAL",
+            "INSURED_NAME": "TIRO, FEBIE FIL CANAVERAL",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "18-May-2021",
+            "FIRST_ISSUE_DATE": "18-May-2021",
+            "MAILING_ADDRESS": "ALEGRIA CORDOVA CEBU",
+            "RESIDENCE_ADDRESS": "ALEGRIA ALEGRIA ALEGRIA, CORDOVA CORDOVA"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Token Payment",
+            "DUE_DATE": "18-AUG-2023",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "6,300.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "800,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "800,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "3,258.41",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "6,368.66"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "CANAVERAL, ELISA RAMOS",
+                "RELATIONSHIP": "AUNT",
+                "BIRTHDATE": "1955-05-31",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "TIRO, FERDINAND CANAVERAL",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "1980-09-11",
+                "PERCENTAGE": "50.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15029799": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15029799",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "IGOT, LEIZEL LAMOSTE",
+            "INSURED_NAME": "IGOT, LEIZEL LAMOSTE",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,500,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "17-Jun-2021",
+            "FIRST_ISSUE_DATE": "18-Jun-2021",
+            "MAILING_ADDRESS": "BANKAL, LAPU-LAPU    LAPU-LAPU",
+            "RESIDENCE_ADDRESS": "BANKAL, LAPU-LAPU    LAPU-LAPU"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "17-JUN-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "2,100.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "590,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "0.00",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "0.00"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "IGOT, JELC XYLEE LAMOSTE",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2011-05-17",
+                "PERCENTAGE": "33.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "IGOT, SYRELL PAQUIBOT",
+                "RELATIONSHIP": "HUSBAND",
+                "BIRTHDATE": "1985-07-28",
+                "PERCENTAGE": "34.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "IGOT, JYLE XYVIER LAMOSTE",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2020-03-29",
+                "PERCENTAGE": "33.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15234988": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15234988",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "TISOY, JUDIT EVARDO",
+            "INSURED_NAME": "TISOY, JUDE EMMAN EVARDO",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "LAPSED    ",
+            "PREMIUM_STATUS": "LAPSED",
+            "SUM_ASSURED": "2,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "07-Jul-2021",
+            "FIRST_ISSUE_DATE": "09-Jul-2021",
+            "MAILING_ADDRESS": "SOONG 1 MACTAN LAPU-LAPU CITY    MACTAN LAPU-LAPU CITY",
+            "RESIDENCE_ADDRESS": "SOONG 1 MACTAN LAPU-LAPU CITY    MACTAN LAPU-LAPU CITY"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "07-APR-2023",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "9,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "2,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "1,500,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "1,500,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "0.00",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "0.00"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "TISOY, JACOB EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2006-03-30",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "EVARDO, JUAN-MEA",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "1998-06-17",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "TISOY, JOSHUA EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2005-01-31",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "4": {
+                "NAME": "TISOY, JASMINE EMMAN EVARDO",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "2007-08-28",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15235017": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15235017",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "TISOY, JUDIT EVARDO",
+            "INSURED_NAME": "TISOY, JOSHUA EMMAN EVARDO",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "LAPSED    ",
+            "PREMIUM_STATUS": "LAPSED",
+            "SUM_ASSURED": "2,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "19-Jul-2021",
+            "FIRST_ISSUE_DATE": "19-Jul-2021",
+            "MAILING_ADDRESS": "SOONG 1 MACTAN LAPU-LAPU CITY    MACTAN LAPU-LAPU CITY",
+            "RESIDENCE_ADDRESS": "SOONG 1 MACTAN LAPU-LAPU CITY    MACTAN LAPU-LAPU CITY"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Credit Card",
+            "DUE_DATE": "19-MAR-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "3,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "0.00",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "0.00"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "TISOY, JASMINE EMMAN EVARDO",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "2007-08-28",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "TISOY, JACOB EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2006-03-30",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "TISOY, JUDE EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2002-08-13",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "4": {
+                "NAME": "EVARDO, JUAN-MEA",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "1998-06-17",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15235071": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15235071",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "TISOY, JUDIT EVARDO",
+            "INSURED_NAME": "TISOY, JACOB EMMAN EVARDO",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "2,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "19-Jul-2021",
+            "FIRST_ISSUE_DATE": "19-Jul-2021",
+            "MAILING_ADDRESS": "SOONG 1 MACTAN LAPU-LAPU CITY    MACTAN LAPU-LAPU CITY",
+            "RESIDENCE_ADDRESS": "SOONG 1 MACTAN LAPU-LAPU CITY    MACTAN LAPU-LAPU CITY"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Credit Card",
+            "DUE_DATE": "19-MAR-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "3,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "0.00",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "0.00"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "TISOY, JOSHUA EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2005-01-31",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "TISOY, JUDE EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2002-08-13",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "TISOY, JASMINE EMMAN EVARDO",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "2007-08-28",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "4": {
+                "NAME": "EVARDO, JUAN-MEA",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "1998-06-17",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15235124": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15235124",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "TISOY, JUDIT EVARDO",
+            "INSURED_NAME": "TISOY, JASMINE EMMAN EVARDO",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "2,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "19-Jul-2021",
+            "FIRST_ISSUE_DATE": "19-Jul-2021",
+            "MAILING_ADDRESS": "SOONG 1 MACTAN LAPU-LAPU CITY    MACTAN LAPU-LAPU CITY",
+            "RESIDENCE_ADDRESS": "SOONG 1 MACTAN LAPU-LAPU CITY    MACTAN LAPU-LAPU CITY"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Credit Card",
+            "DUE_DATE": "19-MAR-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "3,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "373.28",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "729.59"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "EVARDO, JUAN-MEA",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "1998-06-17",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "TISOY, JOSHUA EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2005-01-31",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "TISOY, JACOB EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2006-03-30",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "4": {
+                "NAME": "TISOY, JUDE EMMAN EVARDO",
+                "RELATIONSHIP": "BROTHER",
+                "BIRTHDATE": "2002-08-13",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15290611": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15290611",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "CANO, PHILLIP BELLEZA",
+            "INSURED_NAME": "CANO, PHILLIP BELLEZA",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,700,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "19-Jul-2021",
+            "FIRST_ISSUE_DATE": "19-Jul-2021",
+            "MAILING_ADDRESS": "CANSOJONG TALISAY CITY    TALISAY CITY",
+            "RESIDENCE_ADDRESS": "CANSOJONG, PHILIPPINES, PH"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Token Payment",
+            "DUE_DATE": "19-JUL-2023",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "6,600.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,700,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "700,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "166.12",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "324.68"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "CANO, CAROLYN BELLEZA",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1964-10-06",
+                "PERCENTAGE": "100.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15320902": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15320902",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "EVARDO, GRACE FUROG",
+            "INSURED_NAME": "EVARDO, GRACE FUROG",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "LAPSED    ",
+            "PREMIUM_STATUS": "LAPSED",
+            "SUM_ASSURED": "2,000,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "23-Jul-2021",
+            "FIRST_ISSUE_DATE": "23-Jul-2021",
+            "MAILING_ADDRESS": "CASIA BANKAL LAPU-LAPU CITY    LAPU-LAPU CITY",
+            "RESIDENCE_ADDRESS": "CASIA BANKAL    LAPU-LAPU CITY"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "23-JUL-2022",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "9,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "DAILY HOSPITAL INCOME",
+                "SUM_ASSURED": "1,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            },
+            "5": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "LAPSED",
+                "PREMIUM_STATUS": "LAPSED"
+            }
+        },
+        "FUND_DETAILS": {},
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "EVARDO, ZOSIMA FUROG",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1969-01-06",
+                "PERCENTAGE": "100.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15485871": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15485871",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "EVARDO, BENJAMIN RAMOS",
+            "INSURED_NAME": "EVARDO, BENJAMIN RAMOS",
+            "PLAN_DESCRIPTION": "PLPP - PRULINK ASSURANCE ACCOUNT PLUS",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "1,200,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "21-Aug-2021",
+            "FIRST_ISSUE_DATE": "21-Aug-2021",
+            "MAILING_ADDRESS": "PUROK 1, ZAMORA    TALIBON, BOHOL",
+            "RESIDENCE_ADDRESS": "OMPAD ST. POBLACION LAPU-LAPU CITY   LAGUNA"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "21-MAY-2023",
+            "BILLING_FREQUENCY": "MONTHLY",
+            "MODAL_PREMIUM": "3,000.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ACCIDENTAL DEATH & DISABLEMENT",
+                "SUM_ASSURED": "60,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ACCELERATED LIFE CARE BENEFIT",
+                "SUM_ASSURED": "800,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "TOTAL & PERMANENT DISABILITY",
+                "SUM_ASSURED": "60,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ASSURANCE ACCOUNT PLUS",
+                "SUM_ASSURED": "1,200,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "0.00",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "0.00"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "EVARDO, ZENAIDA RAMOS",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1960-10-24",
+                "PERCENTAGE": "10.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "EVARDO, CHELJIE SEVILLITA",
+                "RELATIONSHIP": "DAUGHTER",
+                "BIRTHDATE": "2011-04-23",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "3": {
+                "NAME": "EVARDO, RHENJE SEVILLITA",
+                "RELATIONSHIP": "SON",
+                "BIRTHDATE": "2004-09-12",
+                "PERCENTAGE": "25.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "4": {
+                "NAME": "EVARDO, EUGENIO AURIT",
+                "RELATIONSHIP": "FATHER",
+                "BIRTHDATE": "1956-12-12",
+                "PERCENTAGE": "10.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "5": {
+                "NAME": "EVARDO, MARICEL SEVILLITA",
+                "RELATIONSHIP": "WIFE",
+                "BIRTHDATE": "1983-11-08",
+                "PERCENTAGE": "30.00%",
+                "DESIGNATION": "P-RE"
+            }
+        }
+    },
+    "15584807": {
+        "GENERAL_INFORMATION": {
+            "POLICY_NUMBER": "15584807",
+            "AGENT_NAME": "EVARDO JR., EUGENIO RAMOS",
+            "BRANCH_NAME": "BLUE PEARL BRANCH 11",
+            "OWNER_NAME": "MENDEZ, RAINEAR AUXTERO",
+            "INSURED_NAME": "MENDEZ, RAINEAR AUXTERO",
+            "PLAN_DESCRIPTION": "YPPF - PRULINK ELITE PROTECTOR 15    ",
+            "PLAN_CURRENCY": "PHP",
+            "CONTRACT_STATUS": "IN FORCE  ",
+            "PREMIUM_STATUS": "PREMIUM PAYING",
+            "SUM_ASSURED": "2,500,000.00",
+            "NON_FORFEITURE_OPTION": "   ",
+            "DIVIDEND_OPTION": "",
+            "ASSIGNED_STATUS": "NO",
+            "EFFECTIVITY_DATE": "27-Aug-2021",
+            "FIRST_ISSUE_DATE": "27-Aug-2021",
+            "MAILING_ADDRESS": "POBLACION, VALENCIA,   BUKIDNON,",
+            "RESIDENCE_ADDRESS": "POBLACION, VALENCIA,   BUKIDNON,"
+        },
+        "PAYMENT_INFORMATION": {
+            "PAYMENT_METHOD": "Direct Billing (Cash)",
+            "DUE_DATE": "27-NOV-2022",
+            "BILLING_FREQUENCY": "QUARTERLY",
+            "MODAL_PREMIUM": "18,750.00",
+            "SINGLE_PREMIUM": "0.00"
+        },
+        "PLAN_DETAILS": {
+            "1": {
+                "COMPONENT_DESCRIPTION": "ELITE 15 TPD",
+                "SUM_ASSURED": "2,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "2": {
+                "COMPONENT_DESCRIPTION": "ELITE 15 LCB",
+                "SUM_ASSURED": "1,000,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "3": {
+                "COMPONENT_DESCRIPTION": "ELITE 15 ADD",
+                "SUM_ASSURED": "1,500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            },
+            "4": {
+                "COMPONENT_DESCRIPTION": "PRULINK ELITE PROTECTOR 15",
+                "SUM_ASSURED": "2,500,000.00",
+                "CONTRACT_STATUS": "IN FORCE",
+                "PREMIUM_STATUS": "PREMIUM PAYING"
+            }
+        },
+        "FUND_DETAILS": {
+            "1": {
+                "FUND_TYPE": "PRULINK EQUITY FUND",
+                "UNIT_BALANCE": "5,964.42",
+                "UNIT_PRICE": "1.95453",
+                "PRICE_DATE": "14-JUN-2023",
+                "FUND_VALUE": "11,657.64"
+            }
+        },
+        "BENEFICIARY_DETAILS": {
+            "1": {
+                "NAME": "MENDEZ, ARTEMIA AUXTERO",
+                "RELATIONSHIP": "MOTHER",
+                "BIRTHDATE": "1955-08-18",
+                "PERCENTAGE": "100.00%",
+                "DESIGNATION": "P-RE"
+            },
+            "2": {
+                "NAME": "MENDEZ, MYRA FLOR AUXTERO",
+                "RELATIONSHIP": "SISTER",
+                "BIRTHDATE": "1985-10-12",
+                "PERCENTAGE": "0.00%",
+                "DESIGNATION": "S-RE"
+            }
+        }
+    }
+}
