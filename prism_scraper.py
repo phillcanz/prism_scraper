@@ -9,7 +9,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import ElementClickInterceptedException
 import time
 import json
-from pathlib import Path
+import os
+import sys
 
 class PrismScraper:
     def __init__(self):
@@ -48,7 +49,7 @@ class PrismScraper:
     def nav_login(self, driver):
         wait = WebDriverWait(driver, 20)
         # set credentials
-        with open('path_to_file/person.json', 'r') as f:
+        with open(os.path.join(sys.path[0], "credentials.json"), "r") as f:
             data = json.load(f)
             prism_username = data['username']
             prism_password = data['password']
