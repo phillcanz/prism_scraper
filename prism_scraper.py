@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import ElementClickInterceptedException
 import time
 import json
-
+from pathlib import Path
 
 class PrismScraper:
     def __init__(self):
@@ -48,8 +48,12 @@ class PrismScraper:
     def nav_login(self, driver):
         wait = WebDriverWait(driver, 20)
         # set credentials
-        prism_username = '70095312'
-        prism_password = 'Stark@5312!02'
+        with open('path_to_file/person.json', 'r') as f:
+            data = json.load(f)
+            prism_username = data['username']
+            prism_password = data['password']
+            # prism_username = '70095312'
+            # prism_password = 'Stark@5312!02'
         # wait until login button is available
         login_btn = wait.until(EC.visibility_of_element_located(
             (By.XPATH, '//*[@id="login-wrapper"]/div[2]/div[6]/input')))
@@ -122,6 +126,7 @@ class PrismScraper:
                     except Exception as e:
                         self.handle_error_mining(driver, elem)
                         continue
+
             wait.until(EC.visibility_of_element_located(
                 (By.XPATH, xpath_grid)))
 
@@ -137,8 +142,9 @@ class PrismScraper:
 
     def next_page_entry(self, driver):
         wait = WebDriverWait(driver, 20)
-        wait.until(EC.visibility_of_element_located(
-            (By.XPATH, '//*[@class="fa fa-angle-right"]'))).click()
+        next_btn = wait.until(EC.element_to_be_clickable(
+            (By.XPATH, '//*[@class="fa fa-angle-right"]')))
+        driver.execute_script("arguments[0].click();", next_btn)
         time.sleep(2)
         wait.until(EC.visibility_of_element_located(
             (By.XPATH, "//label[contains(text(), 'Showing ') and contains(text(), 'entries')]")))
