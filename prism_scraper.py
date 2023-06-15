@@ -31,13 +31,12 @@ class PrismScraper:
         self.start_mine(driver)
 
     def handle_error_mining(self, driver, cond_str=''):
-        driver.get("https://prism.prulifeuk.com.ph/")
-        wait = WebDriverWait(driver, 20)
-        self.nav_login(driver)
-        self.nav_policyinfo(driver)
         while True:
             elem = []
             try:
+                driver.get("https://prism.prulifeuk.com.ph/")
+                self.nav_login(driver)
+                self.nav_policyinfo(driver)
                 elem = driver.find_elements('xpath', f'//a[text()={cond_str}]')
                 if len(elem) > 0:
                     break
