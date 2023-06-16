@@ -56,8 +56,6 @@ class PrismScraper:
             data = json.load(f)
             prism_username = data['username']
             prism_password = data['password']
-            # prism_username = '70095312'
-            # prism_password = 'Stark@5312!02'
         # wait until login button is available
         login_btn = wait.until(EC.visibility_of_element_located(
             (By.XPATH, '//*[@id="login-wrapper"]/div[2]/div[6]/input')))
@@ -275,7 +273,7 @@ class PrismScraper:
                 pass
         xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr'
         rows = driver.find_elements('xpath', xpath_grid)
-        plan_details = {}
+        plan_details = []
         row_num = 0
         for row in rows:
             row_num = row_num + 1
@@ -284,17 +282,17 @@ class PrismScraper:
                                  'SUM_ASSURED': f'{" ".join([word.strip() for word in cols[1].text.split()])}',
                                  'CONTRACT_STATUS': f'{" ".join([word.strip() for word in cols[2].text.split()])}',
                                  'PREMIUM_STATUS': f'{" ".join([word.strip() for word in cols[3].text.split()])}'}
-            plan_details.update({row_num: component_details})
+            plan_details.append(component_details)
 
         ### FUND_DETAILS ###
         try:
-            fund_details_exist = {}
+            fund_details_exist = ''
             fund_details_exist = wait.until(EC.visibility_of_element_located(
                 (By.XPATH, "//*[contains(text(), 'Fund Details')]"))).text.strip()
         except:
-            fund_details_exist = {}
+            fund_details_exist = ''
 
-        fund_details = {}
+        fund_details = []
 
         if len(fund_details_exist) > 0:
             wait.until(EC.visibility_of_element_located(
@@ -332,19 +330,19 @@ class PrismScraper:
                                      'PRICE_DATE': f'{" ".join([word.strip() for word in cols[3].text.split()])}',
                                      'FUND_VALUE': f'{" ".join([word.strip() for word in cols[4].text.split()])}'
                                      }
-                fund_details.update({row_num: fund_type_details})
+                fund_details.append(fund_type_details)
         else:
-            fund_details = {}
+            fund_details = []
 
         ### BENEFICIARY_DETAILS ###
         try:
-            beneficiary_exist = {}
+            beneficiary_exist = ''
             beneficiary_exist = wait.until(EC.visibility_of_element_located(
                 (By.XPATH, "//*[contains(text(), 'Beneficiary Details')]"))).text.strip()
         except:
-            beneficiary_exist = {}
+            beneficiary_exist = ''
 
-        beneficiary_details = {}
+        beneficiary_details = []
 
         if len(beneficiary_exist) > 0:
             wait.until(EC.visibility_of_element_located(
@@ -383,9 +381,9 @@ class PrismScraper:
                                             'PERCENTAGE': f'{" ".join([word.strip() for word in cols[3].text.split()])}',
                                             'DESIGNATION': f'{" ".join([word.strip() for word in cols[4].text.split()])}'
                                             }
-                beneficiary_details.update({row_num: beneficiary_name_details})
+                beneficiary_details.append(beneficiary_name_details)
         else:
-            beneficiary_details = {}
+            beneficiary_details = []
 
         inner_dict = {'GENERAL_INFORMATION': general_information,
                       'PAYMENT_INFORMATION': payment_information,
