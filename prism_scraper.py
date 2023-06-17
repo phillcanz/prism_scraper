@@ -15,15 +15,15 @@ import pandas as pd
 
 
 class PrismScraper:
-    # def __init__(self):
-    #     options = Options()
-    #     # options.add_argument("--headless")
-    #     options.add_argument("--disable-gpu")
-    #     options.add_argument("--no-sandbox")
-    #     options.add_argument("--allow-insecure-localhost")
-    #     options.add_argument("--window-size=1280,800")
-    #     self.driver = webdriver.Chrome(options=options)
-    #     # self.driver.maximize_window()
+    def __init__(self):
+        options = Options()
+        options.add_argument("--headless")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--allow-insecure-localhost")
+        options.add_argument("--window-size=1280,800")
+        self.driver = webdriver.Chrome(options=options)
+        # self.driver.maximize_window()
 
     def policyinfo_flow(self):
         driver = self.driver
@@ -112,7 +112,7 @@ class PrismScraper:
             elems = [elem.text for elem in driver.find_elements(
                 'xpath', xpath_grid)]
             for elem in elems:
-                print(f'Getting data for: {elem}')
+                # print(f'Getting data for: {elem}')
                 while True:
                     try:
                         clickable_elem = wait.until(
@@ -121,7 +121,8 @@ class PrismScraper:
                         time.sleep(2)
                         elem_info = self.scrape_info(driver)
                         policy_dict.update({elem: elem_info})
-                        print(json.dumps({elem: elem_info}, indent=4))
+                        print(f'>>> {elem} --- {elem_info["GENERAL_INFORMATION"]["INSURED_NAME"]}')
+                        # print(json.dumps({elem: elem_info}, indent=4))
                         all_policy_btn = wait.until(
                             EC.element_to_be_clickable((By.LINK_TEXT, 'ALL')))
                         driver.execute_script(
@@ -144,6 +145,8 @@ class PrismScraper:
 
         with open(os.path.join(sys.path[0], "policy_data.json"), "w") as outfile:
             json.dump(policy_dict, outfile)
+
+        self.create_excel()
 
         self.driver.close()
 
@@ -407,7 +410,7 @@ class PrismScraper:
 
         return inner_dict
 
-    def create_dataframe(self):
+    def create_excel(self):
         with open(os.path.join(sys.path[0], "policy_data.json"), "r") as readfile:
             data_panda = pd.read_json(readfile).transpose()
             data_panda.to_excel(excel_writer=os.path.join(
@@ -417,5 +420,5 @@ class PrismScraper:
 if __name__ == "__main__":
 
     prismscraper = PrismScraper()
-    # prismscraper.policyinfo_flow()
-    prismscraper.create_dataframe()
+    prismscraper.policyinfo_flow()
+    # prismscraper.create_excel()
