@@ -11,17 +11,19 @@ import time
 import json
 import os
 import sys
+import pandas as pd
+
 
 class PrismScraper:
-    def __init__(self):
-        options = Options()
-        # options.add_argument("--headless")
-        options.add_argument("--disable-gpu")
-        options.add_argument("--no-sandbox")
-        options.add_argument("--allow-insecure-localhost")
-        options.add_argument("--window-size=1280,800")
-        self.driver = webdriver.Chrome(options=options)
-        # self.driver.maximize_window()
+    # def __init__(self):
+    #     options = Options()
+    #     # options.add_argument("--headless")
+    #     options.add_argument("--disable-gpu")
+    #     options.add_argument("--no-sandbox")
+    #     options.add_argument("--allow-insecure-localhost")
+    #     options.add_argument("--window-size=1280,800")
+    #     self.driver = webdriver.Chrome(options=options)
+    #     # self.driver.maximize_window()
 
     def policyinfo_flow(self):
         driver = self.driver
@@ -105,6 +107,7 @@ class PrismScraper:
         xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]/div/a'
         wait = WebDriverWait(driver, 20)
         policy_dict = {}
+
         while True:
             elems = [elem.text for elem in driver.find_elements(
                 'xpath', xpath_grid)]
@@ -133,11 +136,13 @@ class PrismScraper:
                 (By.XPATH, xpath_grid)))
 
             try:
-                self.next_page_entry(driver)
-            except ElementClickInterceptedException:
-                break
+                next_page_stat = self.next_page_entry(driver)
+                if next_page_stat == 'last_page':
+                    break
+            except:
+                self.handle_error_mining(driver, elems[-1])
 
-        with open("policy_data.json", "w") as outfile:
+        with open(os.path.join(sys.path[0], "policy_data.json"), "w") as outfile:
             json.dump(policy_dict, outfile)
 
         self.driver.close()
@@ -145,13 +150,19 @@ class PrismScraper:
     def next_page_entry(self, driver):
         wait = WebDriverWait(driver, 20)
         next_btn = wait.until(EC.element_to_be_clickable(
-            (By.XPATH, '//*[@class="fa fa-angle-right"]')))
-        driver.execute_script("arguments[0].click();", next_btn)
-        time.sleep(2)
-        wait.until(EC.visibility_of_element_located(
-            (By.XPATH, "//label[contains(text(), 'Showing ') and contains(text(), 'entries')]")))
-        xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]/div/a'
-        wait.until(EC.visibility_of_element_located((By.XPATH, xpath_grid)))
+            (By.XPATH, '//span[@class="fa fa-angle-right"]/ancestor::a[contains(@class,"x-btn")]')))
+
+        if next_btn.get_attribute('ariaDisabled') == "false":
+            driver.execute_script("arguments[0].click();", next_btn)
+            time.sleep(2)
+            wait.until(EC.visibility_of_element_located(
+                (By.XPATH, "//label[contains(text(), 'Showing ') and contains(text(), 'entries')]")))
+            xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]/div/a'
+            wait.until(EC.visibility_of_element_located(
+                (By.XPATH, xpath_grid)))
+            return 'has_next_page'
+        else:
+            return 'last_page'
 
     def scrape_info(self, driver):
         wait = WebDriverWait(driver, 20)
@@ -396,8 +407,15 @@ class PrismScraper:
 
         return inner_dict
 
+    def create_dataframe(self):
+        with open(os.path.join(sys.path[0], "policy_data.json"), "r") as readfile:
+            data_panda = pd.read_json(readfile).transpose()
+            data_panda.to_excel(excel_writer=os.path.join(
+                sys.path[0], "policy_data.xlsx"), index_label='POLICIES')
+
 
 if __name__ == "__main__":
 
     prismscraper = PrismScraper()
-    prismscraper.policyinfo_flow()
+    # prismscraper.policyinfo_flow()
+    prismscraper.create_dataframe()
