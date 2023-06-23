@@ -52,25 +52,28 @@ class PrismScraper:
                 self.handle_error_mining(driver, cond_str)
 
     def nav_login(self, driver):
-        wait = WebDriverWait(driver, 20)
-        # set credentials
-        with open(os.path.join(sys.path[0], "credentials.json"), "r") as f:
-            data = json.load(f)
-            prism_username = data['username']
-            prism_password = data['password']
-        # wait until login button is available
-        login_btn = wait.until(EC.visibility_of_element_located(
-            (By.XPATH, '//*[@id="login-wrapper"]/div[2]/div[6]/input')))
-        # input credentials
-        username_txt = driver.find_element(
-            'xpath', '//*[@id="username-textbox"]')
-        username_txt.send_keys(prism_username)
-        password_txt = driver.find_element(
-            'xpath', '//*[@id="password-textbox"]')
-        password_txt.send_keys(prism_password)
-        # login
-        login_btn.click()
-        time.sleep(2)
+        try:
+            wait = WebDriverWait(driver, 20)
+            # set credentials
+            with open(os.path.join(sys.path[0], "credentials.json"), "r") as f:
+                data = json.load(f)
+                prism_username = data['username']
+                prism_password = data['password']
+            # wait until login button is available
+            login_btn = wait.until(EC.visibility_of_element_located(
+                (By.XPATH, '//*[@id="login-wrapper"]/div[2]/div[6]/input')))
+            # input credentials
+            username_txt = driver.find_element(
+                'xpath', '//*[@id="username-textbox"]')
+            username_txt.send_keys(prism_username)
+            password_txt = driver.find_element(
+                'xpath', '//*[@id="password-textbox"]')
+            password_txt.send_keys(prism_password)
+            # login
+            login_btn.click()
+            time.sleep(2)
+        except:
+            raise Exception('Error Log In')
 
     def nav_policyinfo(self, driver):
         # wait if multiple user message prompts
