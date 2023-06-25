@@ -125,7 +125,12 @@ class PrismScraper:
                         elem_info = self.scrape_info(driver)
                         policy_dict.update({elem: elem_info})
                         print(f'>>> {elem} --- {elem_info["GENERAL_INFORMATION"]["INSURED_NAME"]}')
-                        # print(json.dumps({elem: elem_info}, indent=4))
+                        
+                        # #####
+                        # with open(os.path.join(sys.path[0], "policy_data.json"), "w") as outfile:
+                        #     json.dump(policy_dict, outfile)
+                        # #####
+
                         all_policy_btn = wait.until(
                             EC.element_to_be_clickable((By.LINK_TEXT, 'ALL')))
                         driver.execute_script(
@@ -135,6 +140,8 @@ class PrismScraper:
                     except Exception as e:
                         self.handle_error_mining(driver, elem)
                         pass
+
+                    
 
             wait.until(EC.visibility_of_element_located(
                 (By.XPATH, xpath_grid)))
@@ -148,7 +155,8 @@ class PrismScraper:
 
         with open(os.path.join(sys.path[0], "policy_data.json"), "w") as outfile:
             json.dump(policy_dict, outfile)
-
+            
+        DataCleaner().create_excel()
         # self.create_excel()
 
         self.driver.close()
@@ -290,7 +298,7 @@ class PrismScraper:
                 pass
         xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr'
         rows = driver.find_elements('xpath', xpath_grid)
-        plan_details = []
+        plan_details = {}
         row_num = 0
         for row in rows:
             row_num = row_num + 1
@@ -300,7 +308,7 @@ class PrismScraper:
                                  'SUM_ASSURED': f'{" ".join([word.strip() for word in cols[1].text.split()])}',
                                  'CONTRACT_STATUS': f'{" ".join([word.strip() for word in cols[2].text.split()])}',
                                  'PREMIUM_STATUS': f'{" ".join([word.strip() for word in cols[3].text.split()])}'}}
-            plan_details.append(component_details)
+            plan_details.update(component_details)
 
         ### FUND_DETAILS ###
         try:
@@ -310,7 +318,7 @@ class PrismScraper:
         except:
             fund_details_exist = ''
 
-        fund_details = []
+        fund_details = {}
 
         if len(fund_details_exist) > 0:
             wait.until(EC.visibility_of_element_located(
@@ -349,9 +357,9 @@ class PrismScraper:
                                      'PRICE_DATE': f'{" ".join([word.strip() for word in cols[3].text.split()])}',
                                      'FUND_VALUE': f'{" ".join([word.strip() for word in cols[4].text.split()])}'
                                      }}
-                fund_details.append(fund_type_details)
+                fund_details.update(fund_type_details)
         else:
-            fund_details = []
+            fund_details = {}
 
         ### BENEFICIARY_DETAILS ###
         try:
@@ -361,7 +369,7 @@ class PrismScraper:
         except:
             beneficiary_exist = ''
 
-        beneficiary_details = []
+        beneficiary_details = {}
 
         if len(beneficiary_exist) > 0:
             wait.until(EC.visibility_of_element_located(
@@ -401,9 +409,9 @@ class PrismScraper:
                                             'PERCENTAGE': f'{" ".join([word.strip() for word in cols[3].text.split()])}',
                                             'DESIGNATION': f'{" ".join([word.strip() for word in cols[4].text.split()])}'
                                             }}
-                beneficiary_details.append(beneficiary_name_details)
+                beneficiary_details.update(beneficiary_name_details)
         else:
-            beneficiary_details = []
+            beneficiary_details = {}
 
         inner_dict = {'GENERAL_INFORMATION': general_information,
                       'PAYMENT_INFORMATION': payment_information,
