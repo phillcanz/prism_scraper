@@ -115,7 +115,7 @@ class PrismScraper:
             elems = [elem.text for elem in driver.find_elements(
                 'xpath', xpath_grid)]
             for elem in elems:
-                # print(f'Getting data for: {elem}')
+                # elem = '18012819'   # catch issue for individual policy
                 while True:
                     try:
                         clickable_elem = wait.until(
@@ -319,6 +319,7 @@ class PrismScraper:
             fund_details_exist = ''
 
         fund_details = {}
+        no_data = 0
 
         if len(fund_details_exist) > 0:
             wait.until(EC.visibility_of_element_located(
@@ -331,33 +332,44 @@ class PrismScraper:
             first_row_col = ''
             xpath_row_col = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr/td[1]'
             tries = 0
+            no_data = 0
             while True:
                 tries = tries + 1
-                first_row_col = wait.until(EC.visibility_of_element_located(
-                    (By.XPATH, xpath_row_col))).text.strip()
+ 
+                try:
+                    first_row_col = ''
+                    first_row_col = wait.until(EC.visibility_of_element_located(
+                        (By.XPATH, xpath_row_col))).text.strip()
+                except:
+                    first_row_col = ''
+                
                 if len(first_row_col) > 0:
+                    break
+
+                if tries > 2:
+                    no_data = 1
                     break
                 else:
                     time.sleep(1)
-
-                if tries > 20:
-                    raise Exception("Timed Out")
-                else:
                     pass
-            xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr'
-            rows = driver.find_elements('xpath', xpath_grid)
-            row_num = 0
-            for row in rows:
-                row_num = row_num + 1
-                cols = row.find_elements('xpath', './/td')
-                fund_type_details = {f'{" ".join([word.strip() for word in cols[0].text.split()])}':
-                                     {'FUND_TYPE': f'{" ".join([word.strip() for word in cols[0].text.split()])}',
-                                     'UNIT_BALANCE': f'{" ".join([word.strip() for word in cols[1].text.split()])}',
-                                     'UNIT_PRICE': f'{" ".join([word.strip() for word in cols[2].text.split()])}',
-                                     'PRICE_DATE': f'{" ".join([word.strip() for word in cols[3].text.split()])}',
-                                     'FUND_VALUE': f'{" ".join([word.strip() for word in cols[4].text.split()])}'
-                                     }}
-                fund_details.update(fund_type_details)
+
+            if no_data == 1:
+                fund_details = {}
+            else:
+                xpath_grid = '//*[contains(@id,"-record-") and contains(@id, "gridview-")]/tbody/tr'
+                rows = driver.find_elements('xpath', xpath_grid)
+                row_num = 0
+                for row in rows:
+                    row_num = row_num + 1
+                    cols = row.find_elements('xpath', './/td')
+                    fund_type_details = {f'{" ".join([word.strip() for word in cols[0].text.split()])}':
+                                        {'FUND_TYPE': f'{" ".join([word.strip() for word in cols[0].text.split()])}',
+                                        'UNIT_BALANCE': f'{" ".join([word.strip() for word in cols[1].text.split()])}',
+                                        'UNIT_PRICE': f'{" ".join([word.strip() for word in cols[2].text.split()])}',
+                                        'PRICE_DATE': f'{" ".join([word.strip() for word in cols[3].text.split()])}',
+                                        'FUND_VALUE': f'{" ".join([word.strip() for word in cols[4].text.split()])}'
+                                        }}
+                    fund_details.update(fund_type_details)
         else:
             fund_details = {}
 

@@ -116,6 +116,7 @@ class PrismScraper:
                 'xpath', xpath_grid)]
             for elem in elems:
                 # print(f'Getting data for: {elem}')
+                elem = '18012819'   # catch issue for individual policy
                 while True:
                     try:
                         clickable_elem = wait.until(
